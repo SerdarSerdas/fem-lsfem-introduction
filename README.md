@@ -23,7 +23,7 @@ This study presents a **systematic comparison** between standard Galerkin FEM an
 - **Poisson equation**
 - **Advection-diffusion-reaction equation** 
 - **Stokes and incompressible Navier-Stokes equations**
-- **Multiphase flow** (Theory of Porous Media)
+- **Multiphase materials** (Theory of Porous Media)
 - **Fluid-structure interaction (FSI)**
 
 **Adaptive mesh refinement** guided by **LSFEM residual error indicators** enhances accuracy in regions with steep gradients.
