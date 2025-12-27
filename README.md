@@ -10,7 +10,7 @@ The classical Galerkin finite element method discretizes the weak (variational) 
 
 **LSFEM** addresses these limitations by recasting the PDE system into a minimization problem that seeks the approximate solution $u_h \in V_h$ minimizing the least-squares functional:
 
-$${\cal F}(u_h) = \parallel {\cal L} \, u_h - f \parallel^2_0$$
+$${\cal F}(u_h) = \parallel {\cal L} u_h - f \parallel^2_0$$
 
 where ${\cal L}$ is the differential operator, $f$ is the forcing term, and $\parallel \bullet \parallel^2_0$ denotes the **$L_2$-norm**.
 
