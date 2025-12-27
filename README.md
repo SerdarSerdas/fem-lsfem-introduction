@@ -1,14 +1,19 @@
----
-title: FEM vs Least-Squares FEM | Introduction
-description: Galerkin limitations → LSFEM advantages → Systematic PDE comparison (ADR → Stokes → NS → FSI → PINNs)
----
+# FEM vs Least-Squares FEM
 
-# Introduction
+**Dr.-Ing. Serdar Serdas**
 
-The finite element method (FEM) is a cornerstone numerical technique for the approximate solution of partial differential equations (PDEs) that arise in modeling a broad range of physical phenomena, including **fluid flow, heat transfer, porous media transport, and fluid-structure interaction**.[web:42]
+Classical FEM has problems with:
+- Oscillations in advection
+- Stokes/NS pressure-velocity coupling
 
-## 🎯 Classical Galerkin FEM
+**LSFEM fixes this**:
+$$F(u_h) = \parallel \mathcal{L} u_h - f \parallel^2_0 \quad \rightarrow \quad \mathbf{A}_{SPD} \mathbf{u} = \mathbf{b}$$
 
-The classical **Galerkin finite element method** discretizes the **weak (variational) form** of PDEs by projecting onto finite-dimensional approximation spaces, typically constructed from piecewise polynomial basis functions:
-
-
+**Comparison plan**:
+1. Poisson
+2. Advection-diffusion-reaction 
+3. Stokes
+4. Navier-Stokes
+5. Porous media
+6. FSI
+7. PINNs
